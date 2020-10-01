@@ -1,32 +1,37 @@
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
+import org.junit.After;
+import org.junit.Before;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 public class UsuariosSystemTest {
+
+    private WebDriver driver;
+    private UsuariosPage usuarios;
+
+    @Before
+    public void inicializa() {
+        this.driver = new FirefoxDriver();
+        this.usuarios = new UsuariosPage(driver);
+    }
+
     @Test
     public void deveAdicionarUmUsuario() {
-        WebDriver driver = new FirefoxDriver();
-        driver.get("http://localhost:8080/usuarios/new");
 
-        WebElement nome = driver.findElement(By.name("usuario.nome"));
-        WebElement email = driver.findElement(By.name("usuario.email"));
+        usuarios.visita();
+        usuarios.novo()
+                .cadastra("Ronaldo Luiz de Albuquerque", "ronaldo2009@terra.com.br");
 
-        nome.sendKeys("Ronaldo Luiz de Albuquerque");
-        email.sendKeys("ronaldo2009@terra.com.br");
-        nome.submit();
+        assertTrue(usuarios.existeNaListagem(
+                "Ronaldo Luiz de Albuquerque", "ronaldo2009@terra.com.br"));
 
-        boolean achouNome = driver.getPageSource()
-                .contains("Ronaldo Luiz de Albuquerque");
-        boolean achouEmail = driver.getPageSource()
-                .contains("ronaldo2009@terra.com.br");
+    }
 
-        assertTrue(achouNome);
-        assertTrue(achouEmail);
-
+    @After
+    public void encerra() {
         driver.close();
     }
+
 }
