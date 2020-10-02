@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="29a54361-f056-42e8-8e75-6d6b64889d9a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/NovoUsuarioPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/UsuariosPage.java" afterDir="false" />
+    <list default="true" id="29a54361-f056-42e8-8e75-6d6b64889d9a" name="Default Changelist" comment="- txt, select, radio">
+      <change afterPath="$PROJECT_DIR$/src/test/java/LeiloesPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/LeiloesSystemTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/NovoLeilaoPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UsuariosSystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UsuariosSystemTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,18 +100,26 @@
       <option name="project" value="LOCAL" />
       <updated>1601574541165</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="- one class for page&#10;- refactoring code">
+      <created>1601575874774</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601575874774</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="UsuariosSystemTest first class using Selenium and Junit" />
-    <option name="LAST_COMMIT_MESSAGE" value="UsuariosSystemTest first class using Selenium and Junit" />
+    <MESSAGE value="- one class for page&#10;- refactoring code" />
+    <option name="LAST_COMMIT_MESSAGE" value="- one class for page&#10;- refactoring code" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="464" y="124" key="CommitChangelistDialog2" timestamp="1601574540851">
+    <state x="464" y="124" key="CommitChangelistDialog2" timestamp="1601647535116">
       <screen x="0" y="23" width="1680" height="997" />
     </state>
-    <state x="464" y="124" key="CommitChangelistDialog2/0.23.1680.997@0.23.1680.997" timestamp="1601574540851" />
+    <state x="464" y="124" key="CommitChangelistDialog2/0.23.1680.997@0.23.1680.997" timestamp="1601647535116" />
     <state width="1638" height="270" key="GridCell.Tab.0.bottom" timestamp="1601575139534">
       <screen x="0" y="23" width="1680" height="997" />
     </state>
@@ -133,10 +140,10 @@
       <screen x="0" y="23" width="1680" height="997" />
     </state>
     <state x="328" y="103" key="SettingsEditor/0.23.1680.997@0.23.1680.997" timestamp="1601486454469" />
-    <state x="440" y="261" key="Vcs.Push.Dialog.v2" timestamp="1601574543128">
+    <state x="440" y="261" key="Vcs.Push.Dialog.v2" timestamp="1601647066258">
       <screen x="0" y="23" width="1680" height="997" />
     </state>
-    <state x="440" y="261" key="Vcs.Push.Dialog.v2/0.23.1680.997@0.23.1680.997" timestamp="1601574543128" />
+    <state x="440" y="261" key="Vcs.Push.Dialog.v2/0.23.1680.997@0.23.1680.997" timestamp="1601647066258" />
     <state x="623" y="445" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601486621245">
       <screen x="0" y="23" width="1680" height="997" />
     </state>
